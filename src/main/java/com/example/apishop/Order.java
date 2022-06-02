@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.UUID;
 
 @Data
@@ -11,7 +12,7 @@ import java.util.UUID;
 @NoArgsConstructor
 
 public class Order {
-    private String orderName;
+    private ArrayList<Product> products;
     private final String orderID = UUID.randomUUID().toString();
 
 
